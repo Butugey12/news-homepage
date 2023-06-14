@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+p {
+  line-height: 1.8;
+  color:hsl(236, 13%, 42%);
+}
+img {
+  max-width: 100%;;
+  /* so that they do not overflow inside of the container in which they are placed */
+  width:100%;
+  /* so that they take a 100% of the container */
+}
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 15px;
+  font-family:Inter;
+}
+.header {
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding:1.25rem;
+}
+.header nav {
+  
+}
+.header #menu-button button {
+  border:none;
+  background: transparent;
+  cursor:pointer;
+}
+.showcase {
+  padding:1.25rem;
+  padding-top:0;
+}
+.showcase h1 {
+  font-size: 2rem;
+  color:hsl(240, 100%, 5%);
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+.showcase div:first-child article p {
+
+  margin-bottom:1rem;
+}
+.showcase button {
+  background-color: hsl(5, 85%, 63%);
+  color:white;
+  padding:0.8rem 2rem;
+  font-size: 1rem;
+  border:none;
+  outline:none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+ button:hover {
+  cursor:pointer;
+  background-color: black;
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+
+ .new {
+  background-color: hsl(240, 100%, 5%);
+  color:white;
+  margin-top: 2rem;;
+  padding:1.25rem 1.25rem 0;
+}
+.new article {
+  padding:1.25rem 0;
+}
+.new article:not(:last-child) {
+  border-bottom: 1px solid hsl(233, 8%, 79%,0.8);
+  
+}
+.new h2 {
+  color:hsl(35, 77%, 62%);
+  font-weight:700;
+  font-size: 30px;;
+  letter-spacing: 0.1rem;
+}
+.new article h3 {
+  margin-bottom: .5rem;;
+  font-size: 21px;;
+}.new article h3:hover {
+  cursor: pointer;
+  color:hsl(35, 77%, 62%);
+}
+/* bottom-section is what he calls cards */
+
+.bottom-section {
+  padding:1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap:1.25rem;
+}
+.bottom-section article {
+  display: flex;
+  gap:1.25rem;
+  align-items: center;
+  
+}
+.bottom-section article img {
+  width:150px;
+}
+
+.bottom-section article span {
+  color:hsl(233, 8%, 79%);
+  font-weight: 700;
+  font-size:2rem;
+  opacity:75%;
+}
+.bottom-section article h4 {
+  font-weight:700;
+  font-size: 1.25rem;;
+  margin-bottom: 1rem 0;
+}
+
+/* desktop screeen */
+
+@media (min-width:1024px) {
+  .header {
+    padding:2rem 1.25rem;
+  }
+  .header #menu-button  {
+    display: none;
+  }
+  .showcase {
+    display: flex;
+    gap:2rem;
+  }
+  .new {
+    margin-top:0;
+  }
+  
+}
